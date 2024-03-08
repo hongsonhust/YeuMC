@@ -13,7 +13,15 @@
   <META NAME="Keywords" CONTENT="">
 
   <META NAME="Description" CONTENT="">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>FLORES</title>
  
   <style>
 
@@ -40,23 +48,18 @@ canvas {
 }
 
   </style>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/style.css">
-<link rel="icon" href="img/flowers.png" type="image/x-icon">
-<title>FLORES</title>
+
 
  </HEAD>
 
 
  <BODY>
+  
     <h1></h1>
     <div class="greetings">
-
+      <audio autoplay loop onended="this.play()">
+        <source src=./img/audioMC.mp3 type="audio/mp3">
+      </audio>
         <span>Y</span>
         <span>Ê</span>
         <span>U</span>
@@ -75,7 +78,21 @@ canvas {
         <span></span>
     </div>
     <div class="description">
-        <span> 8/3 chúc em luôn xinh đẹp và HEHE trong lòng anh</span>
+      <style>
+        /* Áp dụng font từ dịch vụ font trực tuyến */
+        span {
+            font-family: 'Comfortaa', Arial, sans-serif; /* Thay 'Arial' và 'sans-serif' bằng font backup bạn muốn sử dụng nếu font chính không khả dụng */
+            /* Điều chỉnh các thuộc tính font khác nếu cần thiết */
+        }
+    </style>
+    <style>
+      /* Áp dụng font từ dịch vụ font trực tuyến */
+      a {
+          font-family: 'Comfortaa', Arial, sans-serif; /* Thay 'Arial' và 'sans-serif' bằng font backup bạn muốn sử dụng nếu font chính không khả dụng */
+          /* Điều chỉnh các thuộc tính font khác nếu cần thiết */
+      }
+  </style>
+        <span> 8/3 chúc em luôn xinh đẹp trong lòng anh</span>
     </div>
     
   <canvas id="pinkboard"></canvas>
@@ -92,7 +109,7 @@ var settings = {
 
   particles: {
 
-    length:   100, // maximum amount of particles
+    length:   200, // maximum amount of particles
 
     duration:   2, // particle duration in sec
 
@@ -100,7 +117,7 @@ var settings = {
 
     effect: -0.75, // play with this for a nice effect
 
-    size:      30, // particle size in pixels
+    size:      40, // particle size in pixels
 
   },
 
@@ -550,11 +567,10 @@ var ParticlePool = (function() {
   </script>
 <div class="button">
     <button>
-        <a href="FLORES.html">Yêu thì nhấp vô đây <3</a>
+        <a href="Yeuchau.html">Yêu thì nhấp vô đây ♡</a>
     </button>
     
 </div>
-
  </BODY>
 
 </HTML>
